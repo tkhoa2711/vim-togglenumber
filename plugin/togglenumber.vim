@@ -23,5 +23,5 @@ endfunc
 autocmd BufEnter * :set number
 
 " key mapping for swift invocation
-nnoremap <F6> :call NumberToggle()<CR>
+nnoremap <Leader>n :call NumberToggle()<CR>
 
