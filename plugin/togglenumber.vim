@@ -9,7 +9,7 @@ endif
 let g:loaded_togglenumber = 1
 
 " toggle between no number, absolute number and relative number
-function! ToggleNumber()
+function! s:ToggleNumber()
     if &relativenumber
         set norelativenumber
     elseif &number
@@ -23,5 +23,5 @@ endfunc
 autocmd BufEnter * :set number
 
 " key mapping for swift invocation
-nnoremap <Leader>n :call NumberToggle()<CR>
+nnoremap <Leader>n :call s:ToggleNumber()<CR>
 
