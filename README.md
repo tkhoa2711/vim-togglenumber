@@ -9,7 +9,7 @@ Installation
 
 If you use [pathogen](https://github.com/tpope/vim-pathogen), clone the repo as below:
 
-    git clone https://github.com/tkhoa2711/vim-togglenumber.git ~/.vim/bundle/
+    git clone https://github.com/tkhoa2711/vim-togglenumber.git ~/.vim/bundle/vim-togglenumber
 
 After having you help tags regenerated, you can view the reference manual with `:help 
 togglenumber`.
