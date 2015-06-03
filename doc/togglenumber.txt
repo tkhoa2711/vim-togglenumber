@@ -1,0 +1,45 @@
+*togglenumber.txt*  toggle between different number modes in vim
+
+Author: Khoa Le
+
+ _                    _                            _               ~
+| |_ ___   __ _  __ _| | ___ _ __  _   _ _ __ ___ | |__   ___ _ __ ~
+| __/ _ \ / _` |/ _` | |/ _ \ '_ \| | | | '_ ` _ \| '_ \ / _ \ '__|~
+| || (_) | (_| | (_| | |  __/ | | | |_| | | | | | | |_) |  __/ |   ~
+ \__\___/ \__, |\__, |_|\___|_| |_|\__,_|_| |_| |_|_.__/ \___|_|   ~
+          |___/ |___/                                              ~
+
+
+==============================================================================
+CONTENTS                                                        *togglenumber*
+
+    1. Intro ................................... |togglenumber-intro|
+    2. Usage ................................... |togglenumber-usage|
+    2. License ................................. |togglenumber-license|
+
+
+------------------------------------------------------------------------------
+1. Intro                                                  *togglenumber-intro*
+
+Vim has 2 major modes for line numbering: absolute and relative. Each has its
+own advantage in different situations; and some people even prefer no line
+numbering at all. With that in mind, togglenumber was created to help you
+easily toggle between these options.
+
+This plugin requires at least Vim 7.3 or later.
+
+------------------------------------------------------------------------------
+1. Usage                                                  *togglenumber-usage*
+
+Use <Leader>n sequence to switch through each numbering mode. You may add new
+mapping for your own convenience: >
+
+    nnoremap <F6> :ToggleNumber<CR>
+<
+
+
+------------------------------------------------------------------------------
+2. License                                              *togglenumber-license*
+
+togglenumber is release with MIT License.
+
