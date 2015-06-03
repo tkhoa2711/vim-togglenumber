@@ -1,8 +1,9 @@
 vim-togglenumber
 ================
 
-easy toggle between different number modes in vim: nonumber, absolute and relative 
-number
+easy toggle between different number modes in vim: nonumber, absolute and relative number, 
+with just one key sequence to rule it all. Most other plugins don't provide a seamless way 
+to do all 3 modes at once.
 
 Installation
 ------------
