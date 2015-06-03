@@ -25,7 +25,7 @@ preferred mapping such as:
 Requirements
 ------------
 
-    - Vim 7.3 or later
+ - Vim 7.3 or later
 
 License
 -------
