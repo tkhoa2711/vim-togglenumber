@@ -23,6 +23,13 @@ preferred mapping such as:
 
     nnoremap <F6> :ToggleNumber<CR>
 
+In case you have no idea about you `<Leader>` key, or rarely use it. I recommend giving the 
+following setting a try, put this in your .vimrc:
+
+    let mapleader = "\<Space>"
+
+Then, invoking the `<Space>n` key sequence would cycle through the modes effortlessly.
+
 Requirements
 ------------
 
