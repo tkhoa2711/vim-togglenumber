@@ -14,12 +14,13 @@ let g:loaded_togglenumber = 1
 
 " toggle between no number, absolute number and relative number
 function! ToggleNumber()
-    if &relativenumber
-        set norelativenumber
-    elseif &number
+    if !&number && !&relativenumber
+        set number
+    elseif !&relativenumber
         set relativenumber
     else
-        set number
+        set nonumber
+        set norelativenumber
     endif
 endfunc
 
