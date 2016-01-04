@@ -25,6 +25,19 @@ preferred mapping such as:
 nnoremap <F6> :ToggleNumber<CR>
 ```
 
+The standard numbering mode in vim is `nonumber`. You may go for other options by 
+adding the following to your `.vimrc`:
+
+```viml
+set number
+```
+
+or
+
+```viml
+set relativenumber
+```
+
 Extra
 -----
 
