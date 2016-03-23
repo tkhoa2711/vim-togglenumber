@@ -1,5 +1,14 @@
 language: ruby
 rvm:
   - 2.0.0
+env:
+  global:
+    - VIM_VERSION=7.3
+    - VIM_VERSION=7.4
+before_install:
+  - apt-get update
+  - apt-get install vim=$VIM_VERSION
 script: rake ci
+notifications:
+  email: false
 
