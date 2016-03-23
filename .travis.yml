@@ -8,6 +8,13 @@ env:
 before_install:
   - sudo apt-get update
   - sudo apt-get install vim=$VIM_VERSION
+  - cd ~; wget ftp://ftp.vim.org/pub/vim/unix/vim-${VIM_VERSION}.tar.bz2
+  - tar xf vim-${VIM_VERSION}.tar.bz2 -C ~/vim --strip-components=1; cd vim
+  - ./configure --prefix=$HOME
+  - make && sudo make install
+  - which vim
+  - export PATH=$HOME:$PATH
+  - which vim
 script: rake ci
 notifications:
   email: false
