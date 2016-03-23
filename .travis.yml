@@ -2,6 +2,9 @@ language: ruby
 sudo: required
 rvm:
   - 2.0.0
+os:
+  - linux
+  - osx
 env:
   - VIM_VERSION=7.3
   - VIM_VERSION=7.4
@@ -11,6 +14,10 @@ before_install:
   - ./configure --prefix=$HOME
   - make && sudo make install
   - popd
+install:
+  - export VIM_PLUGIN_DIR=$HOME/.vim/plugin
+  - mkdir -p $VIM_PLUGIN_DIR
+  - git clone https://github.com/tkhoa2711/vim-togglenumber.git $VIM_PLUGIN_DIR/vim-togglenumber
 script: rake ci
 notifications:
   email: false
