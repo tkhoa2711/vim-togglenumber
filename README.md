@@ -43,8 +43,8 @@ set relativenumber
 Extra
 -----
 
-In case you have no idea about you `<Leader>` key, or rarely use it. I recommend giving the 
-following setting a try, put this in your .vimrc:
+In case you have no idea about your `<Leader>` key, or rarely use it. I recommend giving the 
+following setting a try, put this in your `.vimrc`:
 
 ```viml
 let mapleader = "\<Space>"
