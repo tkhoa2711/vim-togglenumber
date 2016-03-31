@@ -8,7 +8,10 @@ describe 'test-functionality'
     Expect &relativenumber == 0
   end
 
-  it 'cycles through the numbering mode'
+  it 'cycles through the numbering mode - vim 7.3'
+    if version > 703
+      SKIP 'version is newer than 7.3'
+    endif
     " go to number mode
     ToggleNumber
     Expect &number == 1
@@ -16,6 +19,24 @@ describe 'test-functionality'
     " go to relative number mode
     ToggleNumber
     Expect &number == 0
+    Expect &relativenumber == 1
+    " go back to nonumber
+    ToggleNumber
+    Expect &number == 0
+    Expect &relativenumber == 0
+  end
+
+  it 'cycles through the numbering mode - vim 7.4'
+    if version < 704
+      SKIP 'version is older than 7.4'
+    endif
+    " go to number mode
+    ToggleNumber
+    Expect &number == 1
+    Expect &relativenumber == 0
+    " go to relative number mode
+    ToggleNumber
+    Expect &number == 1
     Expect &relativenumber == 1
     " go back to nonumber
     ToggleNumber
