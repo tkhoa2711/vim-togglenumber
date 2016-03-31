@@ -8,22 +8,22 @@ os:
 env:
   - VIM_VERSION=7.3
   - VIM_VERSION=7.4
-before_install:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
-      pushd ~;
-      wget ftp://ftp.vim.org/pub/vim/unix/vim-${VIM_VERSION}.tar.bz2;
-      mkdir -p ~/vim;
-      tar xf vim-${VIM_VERSION}.tar.bz2 -C ~/vim --strip-components=1;
-      cd ~/vim;
-      ./configure --prefix=$HOME;
-      make && sudo make install;
-      popd;
-    fi
-install:
-  - export VIM_PLUGIN_DIR=$HOME/.vim/plugin
-  - mkdir -p $VIM_PLUGIN_DIR
-  - git clone https://github.com/tkhoa2711/vim-togglenumber.git $VIM_PLUGIN_DIR/vim-togglenumber
-  - bundle install --jobs=3 --retry=3
+before_install: |
+  if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
+      pushd ~
+      wget ftp://ftp.vim.org/pub/vim/unix/vim-${VIM_VERSION}.tar.bz2
+      mkdir -p ~/vim
+      tar xf vim-${VIM_VERSION}.tar.bz2 -C ~/vim --strip-components=1
+      cd ~/vim
+      ./configure --prefix=$HOME
+      make && sudo make install
+      popd
+  fi
+install: |
+  export VIM_PLUGIN_DIR=$HOME/.vim/plugin
+  mkdir -p $VIM_PLUGIN_DIR
+  git clone https://github.com/tkhoa2711/vim-togglenumber.git $VIM_PLUGIN_DIR/vim-togglenumber
+  bundle install --jobs=3 --retry=3
 script: rake ci
 notifications:
   email: false
