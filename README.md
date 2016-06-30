@@ -2,7 +2,7 @@ vim-togglenumber
 ================
 
 [![Build Status](https://travis-ci.org/tkhoa2711/vim-togglenumber.svg?branch=master)](https://travis-ci.org/tkhoa2711/vim-togglenumber)
-[![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Easy toggle between different number modes in vim: `nonumber`, `absolute` and `relative number`, 
 with just one key sequence to rule it all. Most other plugins don't provide a seamless way 
