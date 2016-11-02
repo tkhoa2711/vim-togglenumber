@@ -15,10 +15,19 @@ Installation
 
 If you use [pathogen](https://github.com/tpope/vim-pathogen), clone the repo as below:
 
-    git clone https://github.com/tkhoa2711/vim-togglenumber.git ~/.vim/bundle/vim-togglenumber
+```sh
+git clone https://github.com/tkhoa2711/vim-togglenumber.git ~/.vim/bundle/vim-togglenumber
+```
 
 After having you help tags regenerated, you can view the reference manual with `:help 
 togglenumber`.
+
+Or the [Vundle](https://github.com/VundleVim/Vundle.vim) way: add the following line to your `.vimrc`,
+save it and run `:PluginInstall`.
+
+```viml
+Plugin 'tkhoa2711/vim-togglenumber'
+```
 
 Usage
 -----
