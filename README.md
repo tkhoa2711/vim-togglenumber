@@ -19,11 +19,11 @@ If you use [pathogen](https://github.com/tpope/vim-pathogen), clone the repo as 
 git clone https://github.com/tkhoa2711/vim-togglenumber.git ~/.vim/bundle/vim-togglenumber
 ```
 
-After having you help tags regenerated, you can view the reference manual with `:help 
+After having your help tags regenerated, you can view the reference manual with `:help 
 togglenumber`.
 
 Or the [Vundle](https://github.com/VundleVim/Vundle.vim) way: add the following line to your `.vimrc`,
-save it and run `:PluginInstall`.
+save it and then run `:PluginInstall`.
 
 ```viml
 Plugin 'tkhoa2711/vim-togglenumber'
@@ -55,7 +55,7 @@ set relativenumber
 Extra
 -----
 
-In case you have no idea about your `<Leader>` key, or rarely use it. I recommend giving the 
+In case you have no idea about your `<Leader>` key, or rarely use it, I'd recommend giving the 
 following setting a try, put this in your `.vimrc`:
 
 ```viml
