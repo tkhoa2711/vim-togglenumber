@@ -1,6 +1,7 @@
 vim-togglenumber
 ================
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/266fc730ce364cfda36a5c751f06c61f)](https://app.codacy.com/app/tkhoa2711/vim-togglenumber?utm_source=github.com&utm_medium=referral&utm_content=tkhoa2711/vim-togglenumber&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/tkhoa2711/vim-togglenumber.svg?branch=master)](https://travis-ci.org/tkhoa2711/vim-togglenumber)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
