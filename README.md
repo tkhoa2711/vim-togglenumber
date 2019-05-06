@@ -8,7 +8,7 @@ Easy toggle between different number modes in vim: `nonumber`, `absolute` and `r
 with just one key sequence to rule it all. Most other plugins don't provide a seamless way 
 to do all 3 modes at once.
 
-http://www.vim.org/scripts/script.php?script_id=5249
+<http://www.vim.org/scripts/script.php?script_id=5249>
 
 Installation
 ------------
@@ -67,10 +67,9 @@ Then, invoking the `<Space>n` key sequence would cycle through the modes effortl
 Requirements
 ------------
 
- - Vim 7.3 or later
+- Vim 7.3 or later
 
 License
 -------
 
 MIT License
-
