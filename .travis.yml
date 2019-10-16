@@ -1,7 +1,7 @@
 language: ruby
 sudo: required
 rvm:
-  - 2.0.0
+  - 2.3.8
 os:
   - linux
   - osx
@@ -20,6 +20,8 @@ before_install: |
       make && sudo make install
       popd
   fi
+  gem update --system
+  gem install bundler
 install: |
   export VIM_PLUGIN_DIR=$HOME/.vim/plugin
   mkdir -p $VIM_PLUGIN_DIR
