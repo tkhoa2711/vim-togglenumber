@@ -24,6 +24,8 @@ install: |
   export VIM_PLUGIN_DIR=$HOME/.vim/plugin
   mkdir -p $VIM_PLUGIN_DIR
   git clone https://github.com/tkhoa2711/vim-togglenumber.git $VIM_PLUGIN_DIR/vim-togglenumber
+  gem install bundler
+  gem update --system
   bundle install --jobs=3 --retry=3
 script: rake ci
 notifications:
