@@ -9,6 +9,8 @@ env:
   - VIM_VERSION=7.3
   - VIM_VERSION=7.4
   - VIM_VERSION=8.0
+  - VIM_VERSION=8.1
+  - VIM_VERSION=8.2
 before_install: |
   if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
       pushd ~
